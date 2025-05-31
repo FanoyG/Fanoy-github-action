@@ -16,3 +16,10 @@ def is_palindrome(word):
         raise TypeError("Input must be a string")
     cleaned = word.replace(" ", "").lower()
     return cleaned == cleaned[::-1]
+
+
+def subtract(num1, num2):
+    """Subtract two numbers."""
+    if not isinstance(num1, (int, float)) or not isinstance(num2, (int, float)):
+        raise TypeError("Inputs must be int or float")
+    return num1 - num2
